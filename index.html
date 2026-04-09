@@ -77,13 +77,35 @@
   flex-wrap: wrap;
   }
 
+  nav {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
   nav ul {
+  list-style: none;
+  padding: 0;
   margin: 0;
-  padding-left: 20px;
+  display: inline-flex; /* makes items go in one line */
+  gap: 20px; /* spacing between items */
   }
 
   nav li {
-  margin: 5px 0;
+  position: relative;
+  }
+
+  nav ul ul {
+  display: none; /* hide dropdown initially */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #E9D5FF;
+  padding: 10px;
+  border-radius: 8px;
+  }
+
+  nav li:hover ul {
+  display: block; /* show dropdown on hover */
   }
 
   nav a {
