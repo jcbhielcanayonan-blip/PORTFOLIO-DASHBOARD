@@ -20,15 +20,51 @@
   
   <style>
 
-  .profile-info {
-  margin-top: 10px;
-  padding: 12px;
-  border-radius: 12px;
+  .collage-layered {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 20px auto;
+  }
 
-  background: linear-gradient(135deg, #E9D5FF, #C084FC);
-  border: 2px solid #4B0082;
+  .collage-layered img {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid white;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+  }
 
-  box-shadow: 0 6px 15px rgba(75, 0, 130, 0.4);
+  .img1 {
+  top: 0;
+  left: 30px;
+  transform: rotate(-10deg);
+  }
+
+  .img2 {
+  top: 20px;
+  right: 20px;
+  transform: rotate(8deg);
+  }
+
+  .img3 {
+  bottom: 20px;
+  left: 10px;
+  transform: rotate(5deg);
+  }
+
+  .img4 {
+  bottom: 0;
+  right: 40px;
+  transform: rotate(-8deg);
+  }
+
+  .collage-layered img:hover {
+  transform: scale(1.1) rotate(0deg);
+  z-index: 10;
   }
 
   .info {
@@ -125,14 +161,6 @@
   text-align: left;
   }
 
-  img.profile {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #4B0082;
-  }
-
   .box {
   border: 2px solid #4B0082;
   padding: 15px;
@@ -159,10 +187,10 @@
   <h3>My Photo Collage</h3>
 
   <div class="collage">
-    <img src="bhiel.jpg">
-    <img src="photo2.jpg">
-    <img src="photo3.jpg">
-    <img src="photo4.jpg">
+    <img src="y.PNG">
+    <img src="y.PNG">
+    <img src="y.PNG">
+    <img src="y.PNG">
   </div>
   </div>
 
