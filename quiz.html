@@ -1,26 +1,19 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
   <head>
     <title> My Portfolio </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   </head>
-<body>
   
+<body>
   <h1> Quiz Upload </h1>
 
   <nav>
     <ul>
       <li> <a href = "index.html">Home</a> </li>
-    </ul>
-
-    <ul>
-      <li>
-        Upload Pages
-        <ul>
-          <li> <a href = "quiz.html">Quiz Upload</a> </li>
-          <li> <a href = "lab.html">Lab Work Upload</a> </li>
-          <li> <a href = "exam.html">Exam Upload</a> </li>
-        </ul>
-      </li>
+      <li> <a href = "quiz.html">Quiz Upload</a> </li>
+      <li> <a href = "lab.html">Lab Work Upload</a> </li>
+      <li> <a href = "exam.html">Exam Upload</a> </li>
     </ul>
   </nav>
 
@@ -38,24 +31,47 @@
     text-align: center;
   }
 
+  nav {
+  text-align: center;
+  margin-bottom: 15px;
+  }
+
   nav ul {
+  list-style: none;
+  padding: 0;
   margin: 0;
-  padding-left: 20px;
+  display: inline-flex; 
+  gap: 20px; 
   }
 
   nav li {
-  margin: 5px 0;
+  position: relative;
+  }
+
+  nav ul ul {
+  display: none; 
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #E9D5FF;
+  padding: 10px;
+  border-radius: 8px;
+  }
+
+  nav li:hover ul {
+  display: block; 
   }
 
   nav a {
-    text-decoration: none;
-    color: #7C3AED;
-    font-weight: bold;
+  text-decoration: none;
+  color: #7C3AED;
+  font-weight: bold;
   }
 
   nav a:hover {
     text-decoration: underline;
   }
+
 
   .form-box {
     width: 300px;
