@@ -20,6 +20,26 @@
   
   <style>
 
+    background-repeat: no-repeat;
+  }
+
+  .left {
+  flex: 1;
+  color: white;
+  text-align: left;
+  }
+
+  .left h2 {
+  font-size: 40px;
+  margin-left: 40px;
+  }
+
+  .right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  }
+
   .collage-layered {
   position: relative;
   width: 300px;
@@ -91,13 +111,6 @@
   margin: 2px 0;
   }
 
-  body {
-  background-image: url('dss.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  }
-
   .box-container {
   display: flex;
   justify-content: center;
@@ -108,7 +121,7 @@
   nav {
   text-align: center;
   margin-bottom: 15px;
-}
+  }
 
   nav ul {
   list-style: none;
@@ -179,19 +192,21 @@
     
   </style>
 
-  <div class = "center-content">
-    
-  <h3> Student Profile </h3>
-
-  <div class="center-content">
-  <h3>My Photo Collage</h3>
-
-  <div class="collage-layered">
-  <img src="y.PNG" class="img1">
-  <img src="y.PNG" class="img2">
-  <img src="y.PNG" class="img3">
-  <img src="y.PNG" class="img4">
+  <div class="top-section">
+  
+  <div class="left">
+    <h2>Student Profile</h2>
   </div>
+
+  <div class="right">
+    <div class="collage-layered">
+      <img src="y.PNG" class="img1">
+      <img src="y.PNG" class="img2">
+      <img src="y.PNG" class="img3">
+      <img src="y.PNG" class="img4">
+    </div>
+  </div>
+
   </div>
 
   <div class="info">
