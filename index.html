@@ -20,11 +20,26 @@
   
   <style>
 
+    gap: 8px;
+  }
+
+  .box-images img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #4B0082;
+  }
+
   .row-box {
   display: flex;
   align-items: center;
-  gap: 15px;
-  width: 450px;
+  gap: 20px;
+  width: 500px;
+  }
+
+.box-text {
+  text-align: left;
   }
 
   .box-img {
@@ -252,17 +267,23 @@
   </div>
 
   <div class="box row-box">
-    <img src="skills.jpg" class="box-img">
 
-    <div class="box-text">
-      <h4>Skills</h4>
-      <ul>
-        <li>Communication skills</li>
-        <li>Interpersonal skills</li>
-        <li>Time-management skills</li>
-      </ul>
-    </div>
+  <div class="box-images">
+    <img src="img1.jpg">
+    <img src="img2.jpg">
+    <img src="img3.jpg">
   </div>
+
+  <div class="box-text">
+    <h4>Skills</h4>
+    <ul>
+      <li>Communication skills</li>
+      <li>Interpersonal skills</li>
+      <li>Time-management skills</li>
+    </ul>
+  </div>
+
+</div>
 
   <div class="box row-box">
     <img src="interest.jpg" class="box-img">
