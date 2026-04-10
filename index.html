@@ -25,28 +25,7 @@
   text-align: center;
   }
 
-  .profile-title {
-  flex: 1;
-  }
-
-  .right {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-  }
-
-  .profile-title h2 {
-  font-size: 70px;
-  line-height: 1.1;
-  }
-
   font-family: 'Poppins', sans-serif;
-  }
-
-  .profile-title p {
-  font-size: 18px;
-  color: #E9D5FF;
-  font-weight: 400;
   }
 
   .box-images {
@@ -83,28 +62,43 @@
   background: linear-gradient(135deg, #F5F3FF, #E9D5FF);
   }
 
+  .right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  }
+
+  .profile-title h2 {
+  font-size: 80px;
+  }
+
+  .profile-title p {
+  font-size: 20px;
+  }
+
   .top-section {
+  height: 500px;
+  padding: 60px 80px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  padding: 60px 80px;
-  height: 400px;
-
-  width: 100%; 
-  box-sizing: border-box; 
-
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
               url('dss.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   }
 
   .collage-layered {
+  width: 450px; 
+  height: 450px;
   position: relative;
-  width: 350px;
-  height: 350px;
+  }
+
+  .collage-layered img {
+  width: 180px;
+  height: 180px;
   }
 
   .left {
@@ -118,39 +112,24 @@
   margin-left: 40px;
   }
 
-  .collage-layered img {
-  position: absolute;
-  width: 140px;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 10px;
-  border: 3px solid white;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-  transition: transform 0.3s;
-  }
-
   .img1 {
-  top: 0;
-  left: 30px;
-  transform: rotate(-10deg);
+  top: 20px;
+  left: 60px;
   }
 
   .img2 {
-  top: 20px;
-  right: 20px;
-  transform: rotate(8deg);
+  top: 40px;
+  right: 40px;
   }
 
   .img3 {
-  bottom: 20px;
-  left: 10px;
-  transform: rotate(5deg);
+  bottom: 40px;
+  left: 20px;
   }
 
   .img4 {
-  bottom: 0;
-  right: 40px;
-  transform: rotate(-8deg);
+  bottom: 10px;
+  right: 80px;
   }
 
   .collage-layered img:hover {
