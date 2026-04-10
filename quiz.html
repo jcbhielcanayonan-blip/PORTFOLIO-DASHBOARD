@@ -3,10 +3,11 @@
   <head>
     <title> My Portfolio </title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   
 <body>
-  <h1> Quiz Upload </h1>
+  <h1> Exam Upload </h1>
 
   <nav>
     <ul>
@@ -20,74 +21,56 @@
   <hr>
   
   <style>
-
-  .quiz-images {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 20px;
-  }
-
-  .quiz-images img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 10px;
-  border: 3px solid #4B0082;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-  }
-    
-  body {
-  background-image: url('dss.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  }
-
-  h1 {
-    text-align: center;
-  }
-
   nav {
-  text-align: center;
-  margin-bottom: 15px;
-  }
+    text-align: center;
+    margin-bottom: 15px;
+    }
 
   nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: inline-flex; 
-  gap: 20px; 
-  }
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex; 
+    gap: 20px; 
+    }
 
   nav li {
-  position: relative;
-  }
+    position: relative;
+    }
 
   nav ul ul {
-  display: none; 
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: #E9D5FF;
-  padding: 10px;
-  border-radius: 8px;
-  }
+    display: none; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #E9D5FF;
+    padding: 10px;
+    border-radius: 8px;
+    }
 
   nav li:hover ul {
-  display: block; 
-  }
+    display: block; 
+    }
 
   nav a {
-  text-decoration: none;
-  color: #7C3AED;
-  font-weight: bold;
-  }
+    text-decoration: none;
+    color: #7C3AED;
+    font-weight: bold;
+    }
 
   nav a:hover {
     text-decoration: underline;
+    }
+    
+    @media (max-width: 768px) {
+
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+      }
+
   }
+    
   </style>
 
   <div class="quiz-images">
