@@ -26,21 +26,25 @@
   }
 
   .profile-title {
-  margin-left: 40px;
+  flex: 1;
+  }
+
+  .right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
   }
 
   .profile-title h2 {
   font-size: 70px;
-  font-weight: 700;
-  color: white;
   line-height: 1.1;
-  letter-spacing: 2px;
+  }
 
   font-family: 'Poppins', sans-serif;
   }
 
   .profile-title p {
-  font-size: 18px; /* 👈 FIXED (was too big) */
+  font-size: 18px;
   color: #E9D5FF;
   font-weight: 400;
   }
@@ -84,14 +88,23 @@
   justify-content: space-between;
   align-items: center;
 
-  padding: 40px;
-  height: 350px;
+  padding: 60px 80px;
+  height: 400px;
+
+  width: 100%; 
+  box-sizing: border-box; 
 
   background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
               url('dss.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  }
+
+  .collage-layered {
+  position: relative;
+  width: 350px;
+  height: 350px;
   }
 
   .left {
@@ -103,19 +116,6 @@
   .left h2 {
   font-size: 40px;
   margin-left: 40px;
-  }
-
-  .right {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  }
-
-  .collage-layered {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  margin: 20px auto;
   }
 
   .collage-layered img {
@@ -191,8 +191,8 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  display: inline-flex; /* makes items go in one line */
-  gap: 20px; /* spacing between items */
+  display: inline-flex; 
+  gap: 20px; 
   }
 
   nav li {
@@ -200,7 +200,7 @@
   }
 
   nav ul ul {
-  display: none; /* hide dropdown initially */
+  display: none; 
   position: absolute;
   top: 100%;
   left: 0;
@@ -210,7 +210,7 @@
   }
 
   nav li:hover ul {
-  display: block; /* show dropdown on hover */
+  display: block; 
   }
 
   nav a {
@@ -242,8 +242,8 @@
   border: 2px solid #4B0082;
   padding: 25px;
   margin: 25px auto;
-  width: 90%; /* 👈 takes most of the screen */
-  max-width: 1000px; /* keeps it neat on big screens */
+  width: 90%; 
+  max-width: 1000px; 
   border-radius: 15px;
   background-color: #E9D5FF;
   box-shadow: 0 4px 12px rgba(75, 0, 130, 0.4);
@@ -252,7 +252,7 @@
   .row-box {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* 👈 spreads content */
+  justify-content: space-between; 
   gap: 30px;
   }
     
