@@ -1,115 +1,77 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
   <head>
     <title> My Portfolio </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-<body>
   
-  <h1> Exam Upload </h1>
+<body>
+  <h1> HOME </h1>
 
   <nav>
     <ul>
       <li> <a href = "index.html">Home</a> </li>
-    </ul>
-
-    <ul>
-      <li>
-        Upload Pages
-        <ul>
-          <li> <a href = "quiz.html">Quiz Upload</a> </li>
-          <li> <a href = "lab.html">Lab Work Upload</a> </li>
-          <li> <a href = "exam.html">Exam Upload</a> </li>
-        </ul>
-      </li>
+      <li> <a href = "quiz.html">Quiz Upload</a> </li>
+      <li> <a href = "lab.html">Lab Work Upload</a> </li>
+      <li> <a href = "exam.html">Exam Upload</a> </li>
     </ul>
   </nav>
 
   <hr>
   
   <style>
-  body {
-  background-image: url('dss.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  }
-
-  h1 {
+  nav {
     text-align: center;
-  }
+    margin-bottom: 15px;
+    }
 
   nav ul {
-  margin: 0;
-  padding-left: 20px;
-  }
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex; 
+    gap: 20px; 
+    }
 
   nav li {
-  margin: 5px 0;
-  }
+    position: relative;
+    }
+
+  nav ul ul {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #E9D5FF;
+    padding: 10px;
+    border-radius: 8px;
+    }
+
+  nav li:hover ul {
+    display: block; 
+    }
 
   nav a {
     text-decoration: none;
     color: #7C3AED;
     font-weight: bold;
-  }
+    }
 
   nav a:hover {
     text-decoration: underline;
-  }
+    }
+    
+    @media (max-width: 768px) {
 
-  .form-box {
-    width: 300px;
-    margin: 30px auto;
-    padding: 20px;
-    border-radius: 12px;
-    background: linear-gradient(135deg, #E9D5FF, #C084FC);
-    border: 2px solid #4B0082;
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+      }
 
-    box-shadow: 0 8px 20px rgba(75, 0, 130, 0.4);
   }
-
-  .form-box label {
-    font-weight: bold;
-  }
-
-  .form-box input {
-    width: 100%;
-    padding: 5px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
-
-  button {
-    width: 100%;
-    padding: 8px;
-    background-color: #7C3AED;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-
-  button:hover {
-    background-color: #4B0082;
-  }
+    
   </style>
-
-  <div class = "form-box";>
-  <form>
-    <label>Exam Title:</label><br>
-    <input type="text"><br><br>
-
-    <label>Upload File:</label><br>
-    <input type="file"><br><br>
-
-    <label>Upload Proof Image:</label><br>
-    <input type="file" accept="image/*"><br><br>
-
-    <button type="button" onclick="alert('Submitted (simulated)')">Submit</button>
-  </form>
-  </div>
   
 </body>
 </html>
