@@ -91,14 +91,22 @@
   }
 
   .collage-layered {
-  width: 450px; 
-  height: 450px;
   position: relative;
+  width: 450px;
+  height: 450px;
   }
 
   .collage-layered img {
+  position: absolute; /* 👈 THIS is what makes collage */
   width: 180px;
   height: 180px;
+  object-fit: cover;
+
+  border-radius: 12px;
+  border: 3px solid white;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+
+  transition: 0.3s;
   }
 
   .left {
@@ -113,23 +121,27 @@
   }
 
   .img1 {
-  top: 20px;
-  left: 60px;
+  top: 10px;
+  left: 80px;
+  transform: rotate(-10deg);
   }
 
-  .img2 {
+.img2 {
   top: 40px;
   right: 40px;
+  transform: rotate(8deg);
   }
 
-  .img3 {
+.img3 {
   bottom: 40px;
   left: 20px;
+  transform: rotate(5deg);
   }
 
-  .img4 {
+.img4 {
   bottom: 10px;
-  right: 80px;
+  right: 90px;
+  transform: rotate(-8deg);
   }
 
   .collage-layered img:hover {
