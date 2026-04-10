@@ -3,6 +3,7 @@
   <head>
     <title> My Portfolio </title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   
 <body>
@@ -245,6 +246,59 @@
   background-color: #E9D5FF;
   box-shadow: 0 4px 12px rgba(75, 0, 130, 0.4);
   }
+
+    @media (max-width: 768px) {
+
+    .top-section {
+    flex-direction: column;
+    height: auto;
+    padding: 30px 20px;
+    text-align: center;
+    }
+
+    .profile-title h2 {
+    font-size: 40px;
+    }
+
+    .profile-title p {
+    font-size: 16px;
+    }
+
+    .collage-layered {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    }
+  
+    .collage-layered img {
+    position: static;
+    width: 45%;
+    height: auto;
+    margin: 5px;
+    transform: none;
+    }
+
+    .row-box {
+    flex-direction: column;
+    text-align: center;
+    }
+
+    .box-images {
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+  
+    .box-images img {
+    width: 90px;
+    height: 90px;
+    }
+
+    nav ul {
+    flex-direction: column;
+    gap: 10px;
+    }
+
+}
     
   </style>
 
