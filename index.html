@@ -20,6 +20,25 @@
   
   <style>
 
+  .row-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 450px;
+  }
+
+  .box-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #4B0082;
+  }
+
+  .box-text {
+  text-align: left;
+  }
+
   body {
   background: linear-gradient(135deg, #7C3AED, #4C1D95);
   }
@@ -237,7 +256,25 @@
   </div>
 
   <div class="box-container">
-    <div class="box">
+
+  <div class="box row-box">
+    <img src="about.jpg" class="box-img">
+
+    <div class="box-text">
+      <h4>Information about you</h4>
+      <ul>
+        <li>Loves animals except those deadly one.</li>
+        <li>Passionate writer who's into tragic romance.</li>
+        <li>Hates science but interested in astronomy.</li>
+        <li>Only remember the lectures for a short period of time.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="box row-box">
+    <img src="skills.jpg" class="box-img">
+
+    <div class="box-text">
       <h4>Skills</h4>
       <ul>
         <li>Communication skills</li>
@@ -245,8 +282,12 @@
         <li>Time-management skills</li>
       </ul>
     </div>
+  </div>
 
-    <div class="box">
+  <div class="box row-box">
+    <img src="interest.jpg" class="box-img">
+
+    <div class="box-text">
       <h4>Interest</h4>
       <ul>
         <li>Psychology</li>
@@ -254,8 +295,12 @@
         <li>Mathematics</li>
       </ul>
     </div>
+  </div>
 
-    <div class="box">
+  <div class="box row-box">
+    <img src="favorites.jpg" class="box-img">
+
+    <div class="box-text">
       <h4>Favorites</h4>
       <ul>
         <li>Purple</li>
@@ -264,7 +309,8 @@
       </ul>
     </div>
   </div>
-  </div>
+
+</div>
   
 </body>
 </html>
