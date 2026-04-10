@@ -49,13 +49,12 @@
   }
 
   .box-images img {
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 10px;
   border: 2px solid #4B0082;
   }
-
   .row-box {
   display: flex;
   align-items: center;
@@ -236,9 +235,9 @@
 
   .box {
   border: 2px solid #4B0082;
-  padding: 15px;
+  padding: 20px;
   margin: 20px auto;
-  width: 300px;
+  width: 600px; /* 👈 bigger */
   border-radius: 10px;
   background-color: #E9D5FF;
   box-shadow: 0 4px 12px rgba(75, 0, 130, 0.4);
@@ -248,6 +247,12 @@
   margin-top: 0;
   margin-bottom: 10px;
   text-align: center;
+  }
+
+  .row-box {
+  display: flex;
+  align-items: center;
+  gap: 25px;
   }
     
   </style>
@@ -271,7 +276,12 @@
   </div>
 
   <div class="box row-box">
-    <img src="about.jpg" class="box-img">
+
+    <div class="box-images">
+      <img src="about1.jpg">
+      <img src="about2.jpg">
+      <img src="about3.jpg">
+    </div>
 
     <div class="box-text">
       <h4>Information about you</h4>
@@ -281,7 +291,8 @@
         <li>Hates science but interested in astronomy.</li>
         <li>Only remember the lectures for a short period of time.</li>
       </ul>
-    </div>
+  </div>
+
   </div>
 
   <div class="box row-box">
