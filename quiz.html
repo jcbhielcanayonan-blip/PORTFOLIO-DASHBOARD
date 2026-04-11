@@ -22,6 +22,13 @@
   
   <style>
 
+  .quiz-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    }
+
   .quiz-box {
     border: 2px solid #4B0082;
     padding: 15px;
@@ -29,7 +36,8 @@
     background-color: #E9D5FF;
     box-shadow: 0 4px 12px rgba(75, 0, 130, 0.4);
     text-align: center;
-    width: 300px;
+    width: 420px;
+    max width: 90%;
     }
 
   .quiz-box h4 {
@@ -39,7 +47,7 @@
 
   .quiz-box img {
     width: 100%;
-    height: 250px;
+    height: 350px;
     object-fit: cover;
     border-radius: 10px;
     border: 3px solid #4B0082;
@@ -53,7 +61,7 @@
     }
 
   .quiz-images img {
-    width: 300px;   /* 👈 bigger images */
+    width: 300px;   
     height: 300px;
     object-fit: cover;
     border-radius: 12px;
